@@ -33,22 +33,16 @@ const WrestlerCard = ({ wrestler, onUpdate, onDelete, onAdd, isRosterItem = fals
   const handleAdd = async () => {
     if (isRosterItem) return;
     try {
-      const result = await onAdd({
+      await onAdd({
         wrestlerId: wrestler.ID || wrestler.id || wrestler._id,
         rarity,
         shards: parseInt(shards)
       });
 
-      if (result.success) {
-        alert('Wrestler added to roster!');
-        setRarity('1★ Bronze');
-        setShards(0);
-      } else {
-        alert(result.message || 'Failed to add wrestler');
-      }
+      setRarity('1★ Bronze');
+      setShards(0);
     } catch (error) {
       console.error('Add error:', error);
-      alert('Failed to add wrestler');
     }
   };
 
@@ -72,7 +66,6 @@ const WrestlerCard = ({ wrestler, onUpdate, onDelete, onAdd, isRosterItem = fals
 
   return (
     <div className="wrestler-card" style={{ position: 'relative' }}>
-      {/* Image */}
       <div className="wrestler-image-container">
         {imageUrl ? (
           <img

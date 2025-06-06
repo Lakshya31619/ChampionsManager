@@ -2,12 +2,15 @@ import React, { useState, useEffect } from 'react';
 import api from '../../services/api';
 import WrestlerCard from './WrestlerCard';
 
-const AddWrestler = ({ onWrestlerAdded }) => {
+const AddWrestler = () => {
   const [wrestlers, setWrestlers] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
   const [searchTerm, setSearchTerm] = useState('');
   const [addedWrestlers, setAddedWrestlers] = useState(new Set());
+  const [showConfirmModal, setShowConfirmModal] = useState(false);
+  const [pendingWrestler, setPendingWrestler] = useState(null);
+  const [pendingWrestlerName, setPendingWrestlerName] = useState('');
 
   useEffect(() => {
     fetchWrestlers();
@@ -16,9 +19,8 @@ const AddWrestler = ({ onWrestlerAdded }) => {
   const fetchWrestlers = async () => {
     try {
       setLoading(true);
+      setError('');
       const response = await api.get('/wrestlers');
-
-      console.log("API response:", response);
       const wrestlerData = response.data?.wrestlers || [];
 
       if (!Array.isArray(wrestlerData)) {
@@ -28,27 +30,44 @@ const AddWrestler = ({ onWrestlerAdded }) => {
         setWrestlers(wrestlerData);
       }
     } catch (error) {
-      setError('Failed to fetch wrestlers from WWE API');
       console.error("Fetch error:", error);
-
-      setWrestlers([
-        { id: '1', name: 'Roman Reigns', tier: 'C'},
-        { id: '2', name: 'John Cena', tier: 'C' }
-      ]);
+      setError('Failed to load wrestlers. Please try again.');
+      setWrestlers([]);
     } finally {
       setLoading(false);
     }
   };
 
-  const handleAddWrestler = async (wrestlerData) => {
+  const requestAddWrestler = (wrestlerData) => {
+    const wrestlerName = wrestlerData.name || `${wrestlerData.firstName || ''} ${wrestlerData.lastName || ''}`.trim();
+    setPendingWrestler(wrestlerData);
+    setPendingWrestlerName(wrestlerName);
+    setShowConfirmModal(true);
+  };
+
+  const confirmAddWrestler = async () => {
+    const wrestlerId = pendingWrestler.wrestlerId || pendingWrestler.ID || pendingWrestler.id || pendingWrestler._id;
+
+    setAddedWrestlers(prev => new Set([...prev, wrestlerId]));
+
+    setShowConfirmModal(false);
+    setPendingWrestler(null);
+    setPendingWrestlerName('');
+
     try {
-      await api.post('/roster', wrestlerData);
-      const wrestlerId = wrestlerData.wrestlerId;
-      setAddedWrestlers(prev => new Set([...prev, wrestlerId]));
-      return { success: true };
+      await api.post('/roster', pendingWrestler);
+      setError('');
+
+      window.dispatchEvent(new Event("roster-updated"));
     } catch (error) {
       const message = error.response?.data?.message || 'Failed to add wrestler';
-      return { success: false, message };
+      setAddedWrestlers(prev => {
+        const copy = new Set([...prev]);
+        copy.delete(wrestlerId);
+        return copy;
+      });
+      setError(message);
+      console.error('Add wrestler failed:', error);
     }
   };
 
@@ -71,7 +90,7 @@ const AddWrestler = ({ onWrestlerAdded }) => {
           onChange={(e) => setSearchTerm(e.target.value)}
         />
         {error && <div className="error">{error}</div>}
-        
+
         {addedWrestlers.size > 0 && (
           <div style={{ 
             color: '#4CAF50', 
@@ -93,7 +112,7 @@ const AddWrestler = ({ onWrestlerAdded }) => {
           {filteredWrestlers.map(wrestler => {
             const wrestlerId = wrestler.ID || wrestler.id || wrestler._id;
             const isAdded = addedWrestlers.has(wrestlerId);
-            
+
             return (
               <div key={wrestlerId} style={{ position: 'relative' }}>
                 {isAdded && (
@@ -114,12 +133,25 @@ const AddWrestler = ({ onWrestlerAdded }) => {
                 )}
                 <WrestlerCard
                   wrestler={wrestler}
-                  onAdd={handleAddWrestler}
+                  onAdd={requestAddWrestler}
                   isRosterItem={false}
                 />
               </div>
             );
           })}
+        </div>
+      )}
+
+      {showConfirmModal && (
+        <div className="modal-overlay">
+          <div className="modal-content">
+            <h3>Confirm Addition</h3>
+            <p>Are you sure you want to add <strong>{pendingWrestlerName}</strong> to your roster?</p>
+            <div className="modal-buttons">
+              <button onClick={confirmAddWrestler} className="modal-btn success">Yes, Add</button>
+              <button onClick={() => setShowConfirmModal(false)} className="modal-btn">Cancel</button>
+            </div>
+          </div>
         </div>
       )}
     </div>

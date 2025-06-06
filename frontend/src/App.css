@@ -440,7 +440,7 @@ body {
 }
 
 .filter-menu div:hover {
-  background-color: #333;
+  background-color: #ff0000;
 }
 
 .roster-empty {
@@ -482,6 +482,7 @@ body {
 }
 
 .modal-btn {
+  height: 70%;
   padding: 0.6rem 1.2rem;
   border: none;
   border-radius: 6px;
@@ -501,4 +502,39 @@ body {
 
 .modal-btn.danger:hover {
   background-color: #e74c3c;
+}
+
+.modal-btn.success {
+  margin-top: 1px; 
+  background-color: #c0392b;
+}
+
+.modal-btn.success:hover {
+  background-color: #e74c3c;
+}
+
+.class-filter {
+  padding: 10px 14px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #1e3c72;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  appearance: none;
+  cursor: pointer;
+  min-width: 150px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  height: 45px;
+}
+
+.class-filter:focus {
+  border-color: #e80303;
+  box-shadow: 0 0 5px rgba(232, 3, 3, 0.3);
+  outline: none;
+}
+
+.class-filter option {
+  background-color: #fff;
+  color: #1e3c72;
 }

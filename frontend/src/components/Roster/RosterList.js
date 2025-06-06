@@ -9,14 +9,24 @@ const RosterList = () => {
   const [error, setError] = useState('');
   const [searchTerm, setSearchTerm] = useState('');
   const [filterOption, setFilterOption] = useState('name-asc');
+  const [classFilter, setClassFilter] = useState('all');
   const [showFilterMenu, setShowFilterMenu] = useState(false);
-
   const [showConfirmModal, setShowConfirmModal] = useState(false);
   const [pendingDeleteId, setPendingDeleteId] = useState(null);
   const [pendingDeleteName, setPendingDeleteName] = useState('');
 
   useEffect(() => {
     fetchRoster();
+
+    const handleRosterUpdate = () => {
+      fetchRoster();
+    };
+
+    window.addEventListener("roster-updated", handleRosterUpdate);
+
+    return () => {
+      window.removeEventListener("roster-updated", handleRosterUpdate);
+    };
   }, []);
 
   const fetchRoster = async () => {
@@ -64,9 +74,31 @@ const RosterList = () => {
     }
   };
 
-  let filteredRoster = roster.filter(wrestler =>
-    (wrestler.wrestlerName || '').toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  const handleFilterSelect = (option) => {
+    setFilterOption(option);
+    setShowFilterMenu(false);
+  };
+
+  const classFilterMap = {
+    all: 'all',
+    Showboat: 'Color_Yellow',
+    Striker: 'Color_Black',
+    Powerhouse: 'Color_Red',
+    Technician: 'Color_Green',
+    Trickster: 'Color_Purple',
+    Acrobat: 'Color_Blue',
+  };
+
+  let filteredRoster = roster.filter(wrestler => {
+    const matchesName = (wrestler.wrestlerName || '').toLowerCase().includes(searchTerm.toLowerCase());
+
+    const wrestlerClass = wrestler.wrestlerData?.class;
+    const matchesClass =
+      classFilter === 'all' ||
+      wrestlerClass === classFilterMap[classFilter];
+
+    return matchesName && matchesClass;
+  });
 
   const activeFilter = filterOption || 'name-asc';
 
@@ -84,18 +116,27 @@ const RosterList = () => {
     filteredRoster.sort((a, b) => (b.rarity || '').localeCompare(a.rarity || ''));
   }
 
-  const handleFilterSelect = (option) => {
-    setFilterOption(option);
-    setShowFilterMenu(false);
-  };
-
-  if (loading) return <div className="loading">Loading your roster...</div>;
-
   return (
     <div className="roster-wrapper">
       <div className="roster-search-section">
-        <h2>My Roster ({roster.length})</h2>
+        <h2>My Roster ({filteredRoster.length}
+          {classFilter !== 'all'}
+        )</h2>
         <div className="roster-search-controls">
+          <select
+            className="class-filter"
+            value={classFilter}
+            onChange={(e) => setClassFilter(e.target.value)}
+          >
+            <option value="all">All Classes</option>
+            <option value="Showboat">Showboat</option>
+            <option value="Striker">Striker</option>
+            <option value="Powerhouse">Powerhouse</option>
+            <option value="Technician">Technician</option>
+            <option value="Trickster">Trickster</option>
+            <option value="Acrobat">Acrobat</option>
+          </select>
+
           <input
             type="text"
             className="search-input"
@@ -103,12 +144,15 @@ const RosterList = () => {
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
+
           <button
             onClick={() => setShowFilterMenu(!showFilterMenu)}
             className="filter-toggle-btn"
-            title="Filter">
+            title="Filter"
+          >
             <FaFilter />
           </button>
+
           {showFilterMenu && (
             <div className="filter-menu">
               <div onClick={() => handleFilterSelect('name-asc')}>Name A-Z</div>
@@ -126,7 +170,9 @@ const RosterList = () => {
 
       {filteredRoster.length === 0 ? (
         <div className="roster-empty">
-          {searchTerm ? 'No wrestlers found matching your search.' : 'Your roster is empty. Add some wrestlers!'}
+          {searchTerm || classFilter !== 'all'
+            ? 'No wrestlers match your search or filter.'
+            : 'Your roster is empty. Add some wrestlers!'}
         </div>
       ) : (
         <div className="wrestlers-grid">
@@ -146,7 +192,9 @@ const RosterList = () => {
         <div className="modal-overlay">
           <div className="modal-content">
             <h3>Confirm Removal</h3>
-            <p>Are you sure you want to remove <strong>{pendingDeleteName}</strong> from your roster?</p>
+            <p>
+              Are you sure you want to remove <strong>{pendingDeleteName}</strong> from your roster?
+            </p>
             <div className="modal-buttons">
               <button onClick={confirmDelete} className="modal-btn danger">Yes, Remove</button>
               <button onClick={() => setShowConfirmModal(false)} className="modal-btn">Cancel</button>

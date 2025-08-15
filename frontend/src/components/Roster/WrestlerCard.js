@@ -2,20 +2,35 @@ import React, { useState, useEffect } from 'react';
 import { FaTrash } from 'react-icons/fa';
 import { RARITIES, RARITY_COLORS, RARITY_STAR_COLORS } from '../../utils/constants';
 
+const getWrestlerId = (wrestler) =>
+  wrestler?.wrestlerId || wrestler?.ID || wrestler?.id || wrestler?._id || null;
+
 const WrestlerCard = ({ wrestler, onUpdate, onDelete, onAdd, isRosterItem = false }) => {
   const [rarity, setRarity] = useState(wrestler.rarity || '1★ Bronze');
   const [shards, setShards] = useState(wrestler.shards || 0);
   const [level, setLevel] = useState(wrestler.level || 1);
   const [imageError, setImageError] = useState(false);
 
+  const wrestlerInfo = isRosterItem ? (wrestler.wrestlerData || wrestler) : wrestler;
+  const style = wrestlerInfo.style || wrestler.style || 'None';
+  const recruitShards = wrestler.recruit_shards ?? wrestlerInfo.recruit_shards ?? '—';
+
   const getRarityColor = (rarity) => {
     if (RARITY_STAR_COLORS && RARITY_STAR_COLORS[rarity]) {
       return RARITY_STAR_COLORS[rarity];
     }
-    if (rarity.includes('Bronze')) return RARITY_COLORS.Bronze;
-    if (rarity.includes('Silver')) return RARITY_COLORS.Silver;
-    if (rarity.includes('Gold')) return RARITY_COLORS.Gold;
+    if (rarity.includes('Bronze')) return RARITY_COLORS?.Bronze || '#a97142';
+    if (rarity.includes('Silver')) return RARITY_COLORS?.Silver || '#c0c0c0';
+    if (rarity.includes('Gold')) return RARITY_COLORS?.Gold || '#ffd700';
     return '#666';
+  };
+
+  const getRarityIcon = (rarity) => {
+    const stars = rarity.match(/(\d+)★/)?.[1] || '1';
+    if (rarity.includes('Bronze')) return `bronze_${stars}.png`;
+    if (rarity.includes('Silver')) return `silver_${stars}.png`;
+    if (rarity.includes('Gold')) return `gold_${stars}.png`;
+    return null;
   };
 
   useEffect(() => {
@@ -23,32 +38,26 @@ const WrestlerCard = ({ wrestler, onUpdate, onDelete, onAdd, isRosterItem = fals
     const timeout = setTimeout(() => {
       onUpdate(wrestler._id, {
         rarity,
-        shards: parseInt(shards),
-        level: parseInt(level),
+        shards: parseInt(shards) || 0,
+        level: parseInt(level) || 1,
       });
     }, 500);
     return () => clearTimeout(timeout);
   }, [rarity, shards, level]);
 
-  const handleAdd = async () => {
+  const handleAdd = () => {
     if (isRosterItem) return;
-    try {
-      await onAdd({
-        wrestlerId: wrestler.ID || wrestler.id || wrestler._id,
-        rarity,
-        shards: parseInt(shards)
-      });
-
-      setRarity('1★ Bronze');
-      setShards(0);
-    } catch (error) {
-      console.error('Add error:', error);
-    }
+    onAdd({
+      ...wrestler,
+      wrestlerId: getWrestlerId(wrestler),
+      superstarId: wrestler.superstarId,
+      rarity,
+      shards: parseInt(shards) || 0,
+      style,
+    });
   };
 
   const handleImageError = () => setImageError(true);
-
-  const wrestlerInfo = isRosterItem ? (wrestler.wrestlerData || wrestler) : wrestler;
 
   const wrestlerName =
     wrestler.wrestlerName ||
@@ -58,15 +67,17 @@ const WrestlerCard = ({ wrestler, onUpdate, onDelete, onAdd, isRosterItem = fals
     'Unknown Wrestler';
 
   const getImageUrl = () => {
-    if (imageError) return null;
-    return wrestlerInfo.image || wrestlerInfo.imagePNG || wrestlerInfo.imageUrl;
+    if (imageError) return '/placeholder_wrestler.png';
+    return wrestlerInfo.image || wrestlerInfo.imagePNG || wrestlerInfo.imageUrl || '/placeholder_wrestler.png';
   };
 
   const imageUrl = getImageUrl();
+  const rarityIcon = getRarityIcon(rarity);
+  const rarityIconUrl = rarityIcon ? `/${rarityIcon}?v=${encodeURIComponent(rarity)}` : null;
 
   return (
     <div className="wrestler-card" style={{ position: 'relative' }}>
-      <div className="wrestler-image-container">
+      <div className="wrestler-image-container" style={{ position: 'relative' }}>
         {imageUrl ? (
           <img
             src={imageUrl}
@@ -80,16 +91,48 @@ const WrestlerCard = ({ wrestler, onUpdate, onDelete, onAdd, isRosterItem = fals
             <span>No Image</span>
           </div>
         )}
+
+        {rarityIconUrl && (
+          <img
+            src={rarityIconUrl}
+            alt={rarity}
+            className="rarity-icon"
+            style={{
+              position: 'absolute',
+              bottom: '8px',
+              left: '50%',
+              transform: 'translateX(-50%)',
+              width: '80px',
+              height: 'auto',
+              zIndex: 2,
+              filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.5))'
+            }}
+            onError={(e) => {
+              console.log('Rarity icon failed to load:', rarityIconUrl);
+              e.target.src = '/placeholder_star.png'; // fallback image
+            }}
+          />
+        )}
       </div>
 
       <div className="wrestler-name">{wrestlerName}</div>
 
       <div className="wrestler-details">
-        <span className="detail-item rarity-star" style={{ backgroundColor: getRarityColor(rarity), color: '#fff' }}>
-          {rarity}
-        </span>
-        <span className="detail-item">Shards: {shards}</span>
+        <div className="shard-bar">
+          <div className="shard-icon" />
+          <span className="shard-count">
+            {isRosterItem ? (
+              <span className="shard-current">{shards}</span>
+            ) : (
+              <>
+                <span className="shard-current">{shards}</span> / {recruitShards}
+              </>
+            )}
+          </span>
+        </div>
+
         {isRosterItem && <span className="detail-item">Level: {level}</span>}
+        <span className="detail-item">Style: {style}</span>
         {wrestlerInfo.tier && (
           <span className={`detail-item tier-${wrestlerInfo.tier.toLowerCase()}`}>
             Tier: {wrestlerInfo.tier}
@@ -130,7 +173,14 @@ const WrestlerCard = ({ wrestler, onUpdate, onDelete, onAdd, isRosterItem = fals
           className="icon-button top-right"
           onClick={() => onDelete(wrestler._id)}
           title="Remove"
-          style={{ cursor: 'pointer', position: 'absolute', top: '8px', right: '8px', color: '#dc3545', fontSize: '1.2rem' }}
+          style={{
+            cursor: 'pointer',
+            position: 'absolute',
+            top: '8px',
+            right: '8px',
+            color: '#dc3545',
+            fontSize: '1.2rem'
+          }}
         />
       ) : (
         <div className="controls" style={{ marginTop: '10px' }}>

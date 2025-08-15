@@ -3,7 +3,7 @@ const {
   getUserRoster,
   addWrestlerToRoster,
   updateRosterEntry,
-  removeFromRoster
+  removeFromRoster,
 } = require('../controllers/rosterController');
 const auth = require('../middleware/auth');
 

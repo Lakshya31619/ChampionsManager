@@ -7,9 +7,9 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header-content">
-        <h1>🏆 WWE Champions Roster Manager</h1>
+        <h1>🏆 WWE <span>Champions</span> Roster Manager</h1>
         <div className="header-actions">
-          <span className="user-info">Welcome, {user?.username}!</span>
+          <span className="user-info">Welcome, <strong>{user?.username}</strong></span>
           <button className="btn btn-secondary" onClick={logout}>
             Logout
           </button>

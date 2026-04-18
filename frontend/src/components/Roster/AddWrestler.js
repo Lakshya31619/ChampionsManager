@@ -1,170 +1,110 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useMemo } from 'react';
 import api from '../../services/api';
 import WrestlerCard from './WrestlerCard';
+import WrestlerDetailModal from './WrestlerDetailModal';
 import { FaFilter } from 'react-icons/fa';
-import data from '../../data.json';
+import { ERA_OPTIONS, CLASS_FILTER_MAP, STYLE_OPTIONS } from '../../utils/constants';
 
-const AddWrestler = () => {
-  const [wrestlers, setWrestlers] = useState([]);
-  const [rosterIds, setRosterIds] = useState(new Set());
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState('');
-  const [searchTerm, setSearchTerm] = useState('');
+const AddWrestler = ({ wrestlers = [], loading, error: propError, onWrestlerAdded }) => {
   const [addedWrestlers, setAddedWrestlers] = useState(new Set());
+  const [localError, setLocalError] = useState('');
   const [showConfirmModal, setShowConfirmModal] = useState(false);
   const [pendingWrestler, setPendingWrestler] = useState(null);
   const [pendingWrestlerName, setPendingWrestlerName] = useState('');
+  const [selectedWrestlerId, setSelectedWrestlerId] = useState(null);
 
+  const [searchTerm, setSearchTerm] = useState('');
   const [filterOption, setFilterOption] = useState('name-asc');
   const [eraFilter, setEraFilter] = useState('all');
   const [classFilter, setClassFilter] = useState('all');
+  const [styleFilter, setStyleFilter] = useState('all');
   const [showFilterMenu, setShowFilterMenu] = useState(false);
+  const [showWishlistOnly, setShowWishlistOnly] = useState(false);
 
-  const eraOptions = [
-    { label: 'All Eras', value: 'all' },
-    { label: 'Legends', value: 'Era_Classic' },
-    { label: 'Modern', value: 'Era_Modern' },
-    { label: 'Ruthless Aggression', value: 'Era_RuthlessAggression' },
-    { label: 'Icons Of Wrestlemania', value: 'Era_IconsOfWrestleMania' },
-    { label: 'Reality', value: 'Era_Reality' },
-    { label: 'PG', value: 'Era_PG' },
-    { label: 'Attitude', value: 'Era_Attitude' },
-    { label: 'New Generation', value: 'Era_NewGen' },
-    { label: 'Hall Of Fame', value: 'Era_HallOfFame' },
-  ];
+  const error = propError || localError;
 
-  const classFilterMap = {
-    all: 'all',
-    Showboat: 'Color_Yellow',
-    Striker: 'Color_Black',
-    Powerhouse: 'Color_Red',
-    Technician: 'Color_Green',
-    Trickster: 'Color_Purple',
-    Acrobat: 'Color_Blue',
-  };
+  const resolveId = (w) => w.superstarId ?? w.wrestlerId ?? w.ID ?? w.id ?? w._id;
+  const resolveName = (w) =>
+    w.name || w.title || `${w.firstName || ''} ${w.lastName || ''}`.trim() || 'Unknown Wrestler';
 
-  const localDataMap = useMemo(() => {
-    const map = new Map();
-    data.data.forEach(entry => map.set(entry.superstarId, entry));
-    return map;
-  }, []);
+  const selectedWrestler = selectedWrestlerId 
+    ? wrestlers.find(w => resolveId(w) === selectedWrestlerId) || null 
+    : null;
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        setLoading(true);
-        setError('');
-
-        const [wrestlersRes, rosterRes] = await Promise.all([
-          api.get('/wrestlers'),
-          api.get('/roster'),
-        ]);
-
-        const wrestlerData = wrestlersRes.data?.wrestlers || [];
-        const rosterData = rosterRes.data?.roster || [];
-
-        const existingIds = new Set(
-          rosterData.map(item =>
-            item.wrestlerId ?? item.wrestlerData?.ID ?? item.wrestlerData?.id ?? item.wrestlerData?._id
-          )
-        );
-        setRosterIds(existingIds);
-
-        const filtered = wrestlerData
-          .filter(w => !existingIds.has(w.wrestlerId ?? w.ID ?? w.id ?? w._id))
-          .map(w => {
-            const merged = { ...w };
-            const local = localDataMap.get(w.superstarId);
-            if (local) {
-              merged.recruit_shards = local.recruit_shards ?? merged.recruit_shards;
-              merged.style = local.style ?? merged.style;
-            }
-            return merged;
-          });
-
-        setWrestlers(filtered);
-      } catch (err) {
-        console.error('Fetch error:', err);
-        setError('Failed to load wrestlers. Please try again.');
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchData();
-  }, [localDataMap]);
-
-  const requestAddWrestler = wrestlerData => {
-    const wrestlerName = wrestlerData.name || `${wrestlerData.firstName ?? ''} ${wrestlerData.lastName ?? ''}`.trim();
+  const requestAddWrestler = (wrestlerData) => {
     setPendingWrestler(wrestlerData);
-    setPendingWrestlerName(wrestlerName);
+    setPendingWrestlerName(resolveName(wrestlerData));
     setShowConfirmModal(true);
   };
 
   const confirmAddWrestler = async () => {
-  if (!pendingWrestler) return;
+    if (!pendingWrestler) return;
 
-  const wrestlerId =
-    pendingWrestler.wrestlerId ||
-    pendingWrestler.ID ||
-    pendingWrestler.id ||
-    pendingWrestler._id;
+    const wrestlerId = resolveId(pendingWrestler);
+    const wrestlerName = resolveName(pendingWrestler);
 
-  setAddedWrestlers(prev => new Set(prev).add(wrestlerId));
-  setShowConfirmModal(false);
-  setPendingWrestlerName('');
+    setAddedWrestlers(prev => new Set(prev).add(wrestlerId));
+    setShowConfirmModal(false);
+    setPendingWrestlerName('');
 
-  try {
-    // Unified payload for add-or-update endpoint
-    const rosterPayload = {
-      wrestlerId,
-      name: pendingWrestler.name ||
-            `${pendingWrestler.firstName || ''} ${pendingWrestler.lastName || ''}`.trim(),
-      superstarId: pendingWrestler.superstarId,
-      shards: pendingWrestler.shards || pendingWrestler.recruit_shards || 0,
-      style: pendingWrestler.style || 'Unknown',
-      era: pendingWrestler.era || null,
-      class: pendingWrestler.class || pendingWrestler.color || null
-    };
+    try {
+      let res;
+      if (pendingWrestler._dbId) {
+        res = await api.put(`/roster/${pendingWrestler._dbId}`, { isRecruited: true });
+      } else {
+        const rosterPayload = {
+          wrestlerId,
+          wrestlerName,
+          rarity: pendingWrestler.rarity || '1★ Bronze',
+          shards: pendingWrestler.recruit_shards || pendingWrestler.shards || 0,
+          style: pendingWrestler.playStyle || pendingWrestler.style || 'Focused',
+          hypeLevel: pendingWrestler.hypeLevel || 1,
+          hypePoints: pendingWrestler.hypePoints || 0,
+          wrestlerData: pendingWrestler,
+          isRecruited: true
+        };
+        res = await api.post('/roster', rosterPayload);
+      }
 
-    // Single call handles both adding and updating
-    await api.post('/roster', rosterPayload); 
+      if (onWrestlerAdded) {
+        onWrestlerAdded(res.data?.rosterEntry);
+      }
 
-    // Remove added wrestler from local list
-    setWrestlers(prev =>
-      prev.filter(w =>
-        (w.wrestlerId || w.ID || w.id || w._id) !== wrestlerId
-      )
-    );
+      window.dispatchEvent(new Event('roster-updated'));
+    } catch (err) {
+      const message = err.response?.data?.message || 'Failed to add wrestler';
 
-    // Notify other parts of the app
-    window.dispatchEvent(new Event('roster-updated'));
-  } catch (err) {
-    const message = err.response?.data?.message || 'Failed to add/update wrestler';
-    setAddedWrestlers(prev => {
-      const copy = new Set(prev);
-      copy.delete(wrestlerId);
-      return copy;
-    });
-    setError(message);
-    console.error('Add/update wrestler failed:', err);
-  }
-};
+      setAddedWrestlers(prev => {
+        const copy = new Set(prev);
+        copy.delete(wrestlerId);
+        return copy;
+      });
 
+      setLocalError(message);
+      console.error('Add wrestler failed:', err);
+    }
+  };
 
   const filteredWrestlers = useMemo(() => {
     const list = wrestlers.filter(wrestler => {
-      const name = wrestler.name ?? `${wrestler.firstName ?? ''} ${wrestler.lastName ?? ''}`.trim();
+      const name = resolveName(wrestler);
       const matchesName = name.toLowerCase().includes(searchTerm.toLowerCase());
       const matchesEra = eraFilter === 'all' || wrestler.era === eraFilter;
       const wrestlerClass = wrestler.class ?? wrestler.Class ?? wrestler.color;
-      const matchesClass = classFilter === 'all' || wrestlerClass === classFilterMap[classFilter];
-      return matchesName && matchesEra && matchesClass;
+      const matchesClass =
+        classFilter === 'all' ||
+        wrestlerClass === CLASS_FILTER_MAP[classFilter];
+      
+      const wrestlerStyle = wrestler.playStyle ?? wrestler.style;
+      const matchesStyle = styleFilter === 'all' || wrestlerStyle === styleFilter;
+      const matchesWishlist = !showWishlistOnly || wrestler.isWishlist;
+
+      return matchesName && matchesEra && matchesClass && matchesStyle && matchesWishlist;
     });
 
     const sorters = {
-      'name-asc': (a, b) => (a.name ?? '').localeCompare(b.name ?? ''),
-      'name-desc': (a, b) => (b.name ?? '').localeCompare(a.name ?? ''),
+      'name-asc': (a, b) => resolveName(a).localeCompare(resolveName(b)),
+      'name-desc': (a, b) => resolveName(b).localeCompare(resolveName(a)),
       'shards-asc': (a, b) => (a.recruit_shards ?? 0) - (b.recruit_shards ?? 0),
       'shards-desc': (a, b) => (b.recruit_shards ?? 0) - (a.recruit_shards ?? 0),
       'id-asc': (a, b) => (a.superstarId ?? 0) - (b.superstarId ?? 0),
@@ -172,25 +112,53 @@ const AddWrestler = () => {
     };
 
     return list.sort(sorters[filterOption] ?? sorters['name-asc']);
-  }, [wrestlers, searchTerm, eraFilter, classFilter, filterOption]);
+  }, [wrestlers, searchTerm, eraFilter, classFilter, styleFilter, filterOption]);
 
   if (loading) return <div className="loading">Loading wrestlers...</div>;
 
   return (
     <div className="roster-wrapper">
       <div className="roster-search-section">
-        <h2>Unrecruited ({filteredWrestlers.length})</h2>
-        <div className="roster-search-controls">
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          <h2>Unrecruited ({filteredWrestlers.length})</h2>
+          <button 
+            className={`btn-wishlist-toggle ${showWishlistOnly ? 'active' : ''}`}
+            onClick={() => setShowWishlistOnly(!showWishlistOnly)}
+            style={{ 
+              padding: '8px 16px', background: showWishlistOnly ? '#e80303' : 'rgba(255,255,255,0.1)', 
+              color: '#fff', border: '1px solid rgba(255,255,255,0.2)', borderRadius: '6px', cursor: 'pointer',
+              fontWeight: 'bold', fontSize: '13px', transition: 'all 0.2s',
+              boxShadow: showWishlistOnly ? '0 0 15px rgba(232,3,3,0.5)' : 'none'
+            }}
+          >
+            {showWishlistOnly ? '★ Showing Wishlist' : '☆ Show Wishlist'}
+          </button>
+        </div>
+
+        <div className="roster-search-controls" style={{ marginTop: '10px' }}>
           <select value={eraFilter} onChange={e => setEraFilter(e.target.value)}>
-            {eraOptions.map(era => (
-              <option key={era.value} value={era.value}>{era.label}</option>
+            {ERA_OPTIONS.map(era => (
+              <option key={era.value} value={era.value}>
+                {era.label}
+              </option>
             ))}
           </select>
 
           <select value={classFilter} onChange={e => setClassFilter(e.target.value)}>
             <option value="all">All Classes</option>
-            {Object.keys(classFilterMap).filter(c => c !== 'all').map(c => (
-              <option key={c} value={c}>{c}</option>
+            {Object.keys(CLASS_FILTER_MAP).map(c => (
+              <option key={c} value={c}>
+                {c}
+              </option>
+            ))}
+          </select>
+
+          <select value={styleFilter} onChange={e => setStyleFilter(e.target.value)}>
+            <option value="all">All Styles</option>
+            {STYLE_OPTIONS.map(s => (
+              <option key={s} value={s}>
+                {s}
+              </option>
             ))}
           </select>
 
@@ -202,7 +170,11 @@ const AddWrestler = () => {
             onChange={e => setSearchTerm(e.target.value)}
           />
 
-          <button onClick={() => setShowFilterMenu(!showFilterMenu)} className="filter-toggle-btn" title="Sort">
+          <button
+            onClick={() => setShowFilterMenu(!showFilterMenu)}
+            className="filter-toggle-btn"
+            title="Sort"
+          >
             <FaFilter />
           </button>
 
@@ -230,26 +202,35 @@ const AddWrestler = () => {
       ) : (
         <div className="wrestlers-grid">
           {filteredWrestlers.map(wrestler => {
-            const wrestlerId = wrestler.wrestlerId ?? wrestler.ID ?? wrestler.id ?? wrestler._id;
+            const wrestlerId = resolveId(wrestler);
             const isAdded = addedWrestlers.has(wrestlerId);
 
             return (
               <div key={wrestlerId} style={{ position: 'relative' }}>
                 {isAdded && (
-                  <div style={{
-                    position: 'absolute',
-                    top: '10px',
-                    right: '10px',
-                    background: '#4CAF50',
-                    color: 'white',
-                    padding: '5px 10px',
-                    borderRadius: '15px',
-                    fontSize: '12px',
-                    fontWeight: 'bold',
-                    zIndex: 1
-                  }}>Added ✓</div>
+                  <div
+                    style={{
+                      position: 'absolute',
+                      top: '10px',
+                      right: '10px',
+                      background: '#16a34a',
+                      color: 'white',
+                      padding: '4px 10px',
+                      borderRadius: '15px',
+                      fontSize: '11px',
+                      fontWeight: 'bold',
+                      zIndex: 1,
+                    }}
+                  >
+                    Added ✓
+                  </div>
                 )}
-                <WrestlerCard wrestler={wrestler} onAdd={requestAddWrestler} isRosterItem={false} />
+                <WrestlerCard
+                  wrestler={wrestler}
+                  onAdd={requestAddWrestler}
+                  isRosterItem={false}
+                  onViewDetails={(w) => setSelectedWrestlerId(resolveId(w))}
+                />
               </div>
             );
           })}
@@ -260,13 +241,55 @@ const AddWrestler = () => {
         <div className="modal-overlay">
           <div className="modal-content">
             <h3>Confirm Addition</h3>
-            <p>Are you sure you want to add <strong>{pendingWrestlerName}</strong> to your roster?</p>
+            <p>
+              Add <strong>{pendingWrestlerName}</strong> to your roster?
+            </p>
             <div className="modal-buttons">
-              <button onClick={confirmAddWrestler} className="modal-btn success">Yes, Add</button>
-              <button onClick={() => setShowConfirmModal(false)} className="modal-btn">Cancel</button>
+              <button onClick={confirmAddWrestler} className="modal-btn success">
+                Yes, Add
+              </button>
+              <button
+                onClick={() => setShowConfirmModal(false)}
+                className="modal-btn"
+              >
+                Cancel
+              </button>
             </div>
           </div>
         </div>
+      )}
+
+      {selectedWrestler && (
+        <WrestlerDetailModal
+          wrestler={{
+             ...selectedWrestler,
+             rarity: selectedWrestler.rarity || '1★ Bronze', 
+             level: selectedWrestler.level || 1,
+             style: selectedWrestler.style || selectedWrestler.playStyle || 'Focused',
+             wrestlerData: selectedWrestler
+          }}
+          onClose={() => setSelectedWrestlerId(null)}
+          onLevelSave={async (updates) => {
+            try {
+              if (selectedWrestler._dbId) {
+                const res = await api.put(`/roster/${selectedWrestler._dbId}`, updates);
+                if (onWrestlerAdded) onWrestlerAdded(res.data.rosterEntry);
+              } else {
+                const payload = {
+                  wrestlerId: resolveId(selectedWrestler),
+                  wrestlerName: resolveName(selectedWrestler),
+                  isRecruited: false,
+                  wrestlerData: selectedWrestler,
+                  ...updates
+                };
+                const res = await api.post('/roster', payload);
+                if (onWrestlerAdded) onWrestlerAdded(res.data.rosterEntry);
+              }
+            } catch (err) {
+              console.error('Failed to save wishlist data:', err);
+            }
+          }}
+        />
       )}
     </div>
   );

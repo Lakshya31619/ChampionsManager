@@ -5,17 +5,18 @@ const api = axios.create({
   timeout: 10000,
 });
 
+// Always attach the token from localStorage on every request.
+// This is the single source of truth — AuthContext must NOT also set
+// api.defaults.headers.Authorization, as that can race or conflict.
 api.interceptors.request.use(
   (config) => {
     const token = localStorage.getItem('token');
     if (token) {
-      config.headers.Authorization = `Bearer ${token}`;
+      config.headers['Authorization'] = `Bearer ${token}`;
     }
     return config;
   },
-  (error) => {
-    return Promise.reject(error);
-  }
+  (error) => Promise.reject(error)
 );
 
 api.interceptors.response.use(

@@ -18,7 +18,8 @@ export const AuthProvider = ({ children }) => {
   useEffect(() => {
     const token = localStorage.getItem('token');
     if (token) {
-      api.defaults.headers.Authorization = `Bearer ${token}`;
+      // Token is automatically attached by the api.js interceptor —
+      // no need to set api.defaults.headers here.
       fetchProfile();
     } else {
       setLoading(false);
@@ -32,7 +33,6 @@ export const AuthProvider = ({ children }) => {
     } catch (error) {
       console.error('Failed to fetch profile:', error);
       localStorage.removeItem('token');
-      delete api.defaults.headers.Authorization;
     } finally {
       setLoading(false);
     }
@@ -42,16 +42,13 @@ export const AuthProvider = ({ children }) => {
     try {
       const response = await api.post('/auth/login', credentials);
       const { token, user } = response.data;
-      
       localStorage.setItem('token', token);
-      api.defaults.headers.Authorization = `Bearer ${token}`;
       setUser(user);
-      
       return { success: true };
     } catch (error) {
       return {
         success: false,
-        message: error.response?.data?.message || 'Login failed'
+        message: error.response?.data?.message || 'Login failed',
       };
     }
   };
@@ -60,33 +57,23 @@ export const AuthProvider = ({ children }) => {
     try {
       const response = await api.post('/auth/register', userData);
       const { token, user } = response.data;
-      
       localStorage.setItem('token', token);
-      api.defaults.headers.Authorization = `Bearer ${token}`;
       setUser(user);
-      
       return { success: true };
     } catch (error) {
       return {
         success: false,
-        message: error.response?.data?.message || 'Signup failed'
+        message: error.response?.data?.message || 'Signup failed',
       };
     }
   };
 
   const logout = () => {
     localStorage.removeItem('token');
-    delete api.defaults.headers.Authorization;
     setUser(null);
   };
 
-  const value = {
-    user,
-    login,
-    signup,
-    logout,
-    loading
-  };
+  const value = { user, login, signup, logout, loading };
 
   return (
     <AuthContext.Provider value={value}>

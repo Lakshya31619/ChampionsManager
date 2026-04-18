@@ -3,17 +3,32 @@ const cors = require('cors');
 const dotenv = require('dotenv');
 const connectDB = require('./config/db');
 
+dotenv.config();
+
 const authRoutes = require('./routes/auth');
 const wrestlerRoutes = require('./routes/wrestlers');
 const rosterRoutes = require('./routes/roster');
-
-dotenv.config();
 
 const app = express();
 
 connectDB();
 
-app.use(cors());
+// Allow requests from any localhost port (dev) or a configured origin (prod)
+const allowedOrigin = process.env.FRONTEND_URL || 'http://localhost:3000';
+app.use(cors({
+  origin: (origin, callback) => {
+    // Allow requests with no origin (mobile apps, curl, Postman)
+    if (!origin) return callback(null, true);
+    // Allow any localhost origin in development
+    if (origin.startsWith('http://localhost') || origin.startsWith('http://127.0.0.1')) {
+      return callback(null, true);
+    }
+    if (origin === allowedOrigin) return callback(null, true);
+    callback(new Error(`CORS blocked: ${origin}`));
+  },
+  credentials: true,
+}));
+
 app.use(express.json());
 
 app.use('/api/auth', authRoutes);

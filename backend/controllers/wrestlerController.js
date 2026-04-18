@@ -1,4 +1,5 @@
 const axios = require('axios');
+const { fetchStyleMap } = require('../utils/superstarStyleSync');
 
 const getAllWrestlers = async (req, res) => {
   try {
@@ -8,12 +9,16 @@ const getAllWrestlers = async (req, res) => {
       throw new Error('Invalid API response structure');
     }
 
-    const wrestlersData = response.data.data.map(w => ({
-      ...w,
-      // Normalize ID fields for frontend compatibility
-      id: w.id || w.ID || w.wrestlerId || w._id || null,
-      name: w.name || `${w.firstName || ''} ${w.lastName || ''}`.trim(),
-    }));
+    const styleMap = await fetchStyleMap();
+    const wrestlersData = response.data.data.map(w => {
+      const id = w.id || w.ID || w.wrestlerId || w._id || null;
+      return {
+        ...w,
+        id,
+        name: w.name || `${w.firstName || ''} ${w.lastName || ''}`.trim(),
+        style: styleMap[id] || w.playStyle || 'Focused'
+      };
+    });
 
     res.json({
       success: true,
@@ -46,10 +51,13 @@ const getWrestlerById = async (req, res) => {
       throw new Error('Invalid API response structure');
     }
 
+    const styleMap = await fetchStyleMap();
+    const wrestlerIdInternal = response.data.id || response.data.ID || response.data.wrestlerId || response.data._id || null;
     const wrestler = {
       ...response.data,
-      id: response.data.id || response.data.ID || response.data.wrestlerId || response.data._id || null,
+      id: wrestlerIdInternal,
       name: response.data.name || `${response.data.firstName || ''} ${response.data.lastName || ''}`.trim(),
+      style: styleMap[wrestlerIdInternal] || response.data.playStyle || 'Focused'
     };
 
     res.json({
@@ -66,4 +74,24 @@ const getWrestlerById = async (req, res) => {
   }
 };
 
-module.exports = { getAllWrestlers, getWrestlerById };
+
+// Proxy for the superstar-guide individual endpoint — avoids CORS from frontend
+const getSuperstarGuide = async (req, res) => {
+  try {
+    const { id } = req.params;
+    if (!id) return res.status(400).json({ success: false, message: 'Missing superstar ID' });
+
+    const url = `https://prod-api-new.wwechampions.com/superstar-guide/superstars/${id}`;
+    const response = await axios.get(url);
+
+    res.json(response.data);
+  } catch (error) {
+    const status = error.response?.status || 500;
+    if (status !== 404) {
+      console.error('WWE Superstar Guide Error:', error.message);
+    }
+    res.status(status).json({ success: false, message: 'Failed to fetch superstar data', error: error.message });
+  }
+};
+
+module.exports = { getAllWrestlers, getWrestlerById, getSuperstarGuide };

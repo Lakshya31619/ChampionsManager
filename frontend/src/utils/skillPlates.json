@@ -1,0 +1,1394 @@
+[
+  {
+    "name": "Hugs & Kisses",
+    "description": "Whenever you make 6 or more Row Break Gems, increase your Red Gem Damage by 300% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2026/04/SkillPlate_T6_LivMorgan_Apr2026.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Authority's Crown",
+    "description": "Whenever you make 6 or more Multiply Gems, increase your Purple Gem damage by 100% for 2 turns!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2026/04/steph2.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Piper's Power (Red)",
+    "description": "Whenever you make 4 or more Pyro Gems, increase all of your Gem Damage by 100% and your Red Gem damage by 500% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2026/04/SkillPlate_T6_PNivenRed_Mar2026.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Piper's Power (Purple)",
+    "description": "Whenever you make 4 or more Pyro Gems, increase all of your Gem Damage by 100% and your Purple Gem damage by 500% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2026/03/SkillPlates_SR0505.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Unquestioned Authority",
+    "description": "Whenever you make 6 or more Multiply Gems, increase your Green Gem damage by 100% for 2 turns!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2026/03/SkillPlate_T5_StephanieMcMahon_Authority.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Bear Bow",
+    "description": "When you make 6+ Submission Gems, increase ALL of your Move damage by 200% for 2 turns!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2026/02/Currency_SkillPlate_Panda_Jan2026_Wknd-1.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Bear Band",
+    "description": "Whenever you break 20+ Trap Gems, generate 49 Black Gems at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2026/02/Currency_SkillPlate_Kuma_Jan2026_Wknd-1.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Voiceless Voice",
+    "description": "Whenever you make 6 or more Trap Gems, increase your Yellow Gem damage by 300% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2026/02/SkillPlate_T6_CPunk_GTS.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Final Flash",
+    "description": "Whenever you Destroy 20+ Gems, Generate 20 Yellow Gems at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2026/01/SkillPlate_GemGeneration_Yellow_RR_2026.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Peace is a Lie",
+    "description": "Whenever you Destroy 20+ Gems, Generate 20 Red Gems at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2026/01/SkillPlate_GemGeneration_Red_RR_2026.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Beware My Power",
+    "description": "Whenever you Destroy 20+ Gems, Generate 20 Green Gems at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2026/01/SkillPlate_GemGeneration_Green_RR_2026.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Blue Sky",
+    "description": "Whenever you Destroy 20+ Gems, Generate 20 Blue Gems at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2026/01/SkillPlate_GemGeneration_Blue_RR_2026.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Berserker",
+    "description": "Whenever you Destroy 20+ Gems, Generate 20 Purple Gems at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2026/01/SkillPlate_GemGeneration_Purple_RR_2026.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Singularity",
+    "description": "Whenever you Destroy 20+ Gems, Generate 20 Black Gems at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2026/01/SkillPlate_GemGeneration_Black_RR_2026.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Natural Phenomenon",
+    "description": "When you make 3+ Juggernaut Gems, increase your Red Gem Damage by 75% for 1 turn!When you make 3+ Juggernaut Gems, increase your Red Move Damage by 75% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/12/SkillPlate_T5_Dec2025_Wknd3.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Bombshell",
+    "description": "When you make 10+ Leech Gems, increase your Red Gem Damage by 400% for 1 turn!When you break 10+ Leech Gems, generate 40 Red Gems at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/12/SkillPlates_Silver_T6_Bombshell.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Never Give Up",
+    "description": "Whenever you break 10+ Yellow Gems, generate 30 Green Gems at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/12/SkillPlate_T6_NeverGiveUp_Dec2025_Wknd1.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Chain of Command",
+    "description": "Whenever you make 8+ Silence Gems, increase your Red Gem damage and Blue Gem damage by 150% for 1 turns!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/12/SkillPlate_T5_ChainofCommand_Dec2025_Wknd1.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Hot Chocolate",
+    "description": "When you make 6+ Protect Gems, increase your Blue Move Damage by 400% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/12/SkillPlate_T6_MarkHenry_Dec2025_Wknd1.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Steve's Sticks",
+    "description": "When you make 6+ Multiply Gems, increase your Black Gem damage by 200% for 1 turn!When you break 6+ Multiply Gems, generate 30 Black Gems at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/11/image.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Rage State",
+    "description": "Whenever you make 2 or more Juggernaut Gems, increase all of your Gem Damage and Move Damage by 50% for 2 turns!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/11/SkillPlates_Bronze_T5_Rage_TKN2025.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Jaguar Chain",
+    "description": "Whenever you make 3 or more Juggernaut Gems, increase your Yellow Gem Damage and Blue Move Damage by 108% for 2 turns!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/11/SkillPlates_Silver_T5_KNecklace_TKN2025.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Black Wings of Ruin",
+    "description": "When you break 20+ Trap Gems, generate 49 Random Yellow Gems at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/11/SkillPlates_Silver_T6_JK_Jacket_TKN2025.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Electric Wind God Fist",
+    "description": "Whenever you break 20+ Immobile Gems, generate 49 Green Gems at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/11/SkillPlates_Silver_T6_KM_Glove_TKN2025.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Werewolf's Vest",
+    "description": "Whenever you activate a Red Move, increase your Red Move Damage by 100% for 2 total turns (includes current turn)!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/11/SkillPlates_Bronze_T5_Jacob_Fatu_Zombie.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Eternal Bliss",
+    "description": "Whenever you make 6 or more Trap Gems, increase your Black Gem damage by 300% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/10/image.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Fearless Stare",
+    "description": "Whenever you make 6 or more Submission Gems, increase your Black Gem damage by 200% for 2 turns!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/10/SkillPlates_P_Apri2025_Wknd4.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Green Xplosion",
+    "description": "Whenever you make 4+ X Break Gems, increase your Green Gem damage by 300% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/12/SkillPlates_Silver_T6_Green_XBreak.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Black Xplosion",
+    "description": "Whenever you make 4+ X Break Gems, increase your Black Gem damage by 300% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/12/SkillPlates_Silver_T6_Black_XBreak.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Yellow Xplosion",
+    "description": "Whenever you make 4+ X Break Gems, increase your Yellow Gem damage by 300% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/12/SkillPlates_Silver_T6_Yellow_XBreak.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Red Xplosion",
+    "description": "Whenever you make 4+ X Break Gems, increase your Red Gem damage by 300% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/12/SkillPlates_Silver_T6_Red_XBreak.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Blue Xplosion",
+    "description": "Whenever you make 4+ X Break Gems, increase your Blue Gem damage by 300% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/12/SkillPlates_Silver_T6_Blue_XBreak.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Rainbow Xplosion",
+    "description": "Whenever you make 4+ X Break Gems, increase all of your Gem damage by 500% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/12/SkillPlates_Silver_T6_Rainbow_XBreak.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Kofi's World",
+    "description": "Whenever you activate a Purple Move, increase your Purple Move Damage by 100% for 2 total turns (includes current turn)!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/12/SkillPlate_T5_KofiKingston_World.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Purple Crossfire",
+    "description": "Whenever you make 4+ Cross Break Gems, increase your Purple Gem damage by 300% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/09/SkillPlates_Silver_T6_Purple_CrossBreak.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Green Crossfire",
+    "description": "Whenever you make 4+ Cross Break Gems, increase your Green Gem damage by 300% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/09/SkillPlates_Silver_T6_Green_CrossBreak.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Black Crossfire",
+    "description": "Whenever you make 4+ Cross Break Gems, increase your Black Gem damage by 300% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/09/SkillPlates_Silver_T6_Black_CrossBreak.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Yellow Crossfire",
+    "description": "Whenever you make 4+ Cross Break Gems, increase your Yellow Gem damage by 300% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/09/SkillPlates_Silver_T6_Yellow_CrossBreak.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Red Crossfire",
+    "description": "Whenever you make 4+ Cross Break Gems, increase your Red Gem damage by 300% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/09/SkillPlates_Silver_T6_Red_CrossBreak.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Blue Crossfire",
+    "description": "Whenever you make 4+ Cross Break Gems, increase your Blue Gem damage by 300% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/09/SkillPlates_Silver_T6_Blue_CrossBreak.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Rainbow Crossfire",
+    "description": "Whenever you make 4+ Cross Break Gems, increase all of your Gem damage by 500% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/09/SkillPlates_Silver_T6_Rainbow_CrossBreak.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Purple Flurries",
+    "description": "Whenever you make 4+ Snowfall Gems, increase your Purple Gem damage by 300% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/08/SkillPlates_Silver_T6_Purple_Snowfall.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Green Flurries",
+    "description": "Whenever you make 4+ Snowfall Gems, increase your Green Gem damage by 300% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/08/SkillPlates_Silver_T6_Green_Snowfall.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Black Flurries",
+    "description": "Whenever you make 4+ Snowfall Gems, increase your Black Gem damage by 300% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/08/SkillPlates_Silver_T6_Black_Snowfall.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Yellow Flurries",
+    "description": "Whenever you make 4+ Snowfall Gems, increase your Yellow Gem damage by 300% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/08/SkillPlates_Silver_T6_Yellow_Snowfall.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Red Flurries",
+    "description": "Whenever you make 4+ Snowfall Gems, increase your Red Gem damage by 300% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/08/SkillPlates_Silver_T6_Red_Snowfall.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Blue Flurries",
+    "description": "Whenever you make 4+ Snowfall Gems, increase your Blue Gem damage by 300% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/08/SkillPlates_Silver_T6_Blue_Snowfall.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Rainbow Flurries",
+    "description": "Whenever you make 4+ Snowfall Gems, increase all of your Gem damage by 500% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/08/SkillPlates_Silver_T6_Rainbow_Snowfall.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Frankie the Parrot",
+    "description": "Whenever you make 6+ Blast Gems, increase all of your Gem damage by 500% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/08/image.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Purple Transfusion",
+    "description": "When you make 6+ Leech Gems, increase your Purple Gem damage by 200% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/08/T6_SkillPlates_Purple_LeechDMG.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Green Transfusion",
+    "description": "When you make 6+ Leech Gems, increase your Green Gem damage by 200% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/08/T6_SkillPlates_Green_LeechDMG.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Black Transfusion",
+    "description": "When you make 6+ Leech Gems, increase your Black Gem damage by 200% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/08/T6_SkillPlates_Black_LeechDMG.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Yellow Transfusion",
+    "description": "When you make 6+ Leech Gems, increase your Yellow Gem damage by 200% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/08/T6_SkillPlates_Yellow_LeechDMG.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Red Transfusion",
+    "description": "When you make 6+ Leech Gems, increase your Red Gem damage by 200% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/08/T6_SkillPlates_Red_LeechDMG.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Blue Transfusion",
+    "description": "When you make 6+ Leech Gems, increase your Blue Gem damage by 200% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/08/T6_SkillPlates_Blue_LeechDMG.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Rainbow Transfusion",
+    "description": "When you make 6+ Leech Gems, increase all of your Gem damage by 200% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/08/T6_SkillPlates_All_LeechDMG.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Gruesome Guise",
+    "description": "Whenever you activate a Blue Move, increase your Blue Move Damage by 100% for 2 total turns (includes current turn)!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/08/SkillPlates_Jun2025_Wknd4.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Ring Royalty",
+    "description": "Whenever you Destroy 30+ Gems, Generate 30 Wild Card Gems at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/08/SkillPlates_Jun2025_WL.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Piper's Power (Green)",
+    "description": "Whenever you make 4 or more Pyro Gems, increase all of your Gem Damage by 100% and your Green Gem damage by 500% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/08/SkillPlates_PN_616_Green.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Rainbow Reinforcement",
+    "description": "When you make 6+ Reinforce Gems, increase all of your Gem damage by 100% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/08/T6_SkillPlates_All_ReinforceDMG.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Red Reinforcement",
+    "description": "When you make 6+ Reinforce Gems, increase your Red Gem damage by 100% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/08/T6_SkillPlates_Red_ReinforceDMG.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Blue Reinforcement",
+    "description": "When you make 6+ Reinforce Gems, increase your Blue Gem damage by 100% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/08/T6_SkillPlates_Blue_ReinforceDMG.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Green Reinforcement",
+    "description": "When you make 6+ Reinforce Gems, increase your Green Gem damage by 100% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/08/T6_SkillPlates_Green_ReinforceDMG.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Purple Reinforcement",
+    "description": "When you make 6+ Reinforce Gems, increase your Purple Gem damage by 100% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/08/T6_SkillPlates_Purple_ReinforceDMG.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Black Reinforcement",
+    "description": "When you make 6+ Reinforce Gems, increase your Black Gem damage by 100% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/08/T6_SkillPlates_Black_ReinforceDMG.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Yellow Reinforcement",
+    "description": "When you make 6+ Reinforce Gems, increase your Yellow Gem damage by 100% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/08/T6_SkillPlates_Yellow_ReinforceDMG-1.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Ministry Business",
+    "description": "When you make 6+ Multiply Gems, increase all of your Gem Damage by 100% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/05/SkillPlates_Ministry.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Shadow Drive",
+    "description": "When you break 4+ Purple Gems, generate 10 random Black Gems at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/05/SkillPlate_GemGeneration_purpletoBlack.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Gold Rush",
+    "description": "When you break 4+ Purple Gems, generate 10 random Yellow Gems at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/05/SkillPlate_GemGeneration_PurpletoYellow.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Ice Veins",
+    "description": "When you break 4+ Purple Gems, generate 10 random Blue Gems at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/05/SkillPlate_GemGeneration_PurpletoBlue.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Crimson Catalyst",
+    "description": "When you break 4+ Purple Gems, generate 10 random Red Gems at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/05/SkillPlate_GemGeneration_PurpletoRed.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Big Botch Man (Green)",
+    "description": "Whenever you Make 30+ Botch Gems, increase Green Gem Damage 300% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/05/SkillPlates_BigBossMan_Tech.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Big Botch Man (Yellow)",
+    "description": "Whenever you Make 30+ Botch Gems, increase Yellow Gem Damage 300% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/05/SkillPlates_BigBossMan_Show-1.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Big Botch Man (Red)",
+    "description": "Whenever you Make 30+ Botch Gems, increase Red Gem Damage 300% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/05/SkillPlates_BigBossMan_Power-1.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Big Botch Man (Blue)",
+    "description": "Whenever you Make 30+ Botch Gems, increase Blue Gem Damage 300% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/05/SkillPlates_BigBossMan_Acro-1.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Big Botch Man (Purple)",
+    "description": "Whenever you Make 30+ Botch Gems, increase Purple Gem Damage 300% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/05/SkillPlates_BigBossMan_Trickster-1.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Big Botch Man (Black)",
+    "description": "Whenever you Make 30+ Botch Gems, increase Black Gem Damage 300% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/05/SkillPlates_BigBossMan_Striker.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Big Botch Man",
+    "description": "Whenever you Make 30+ Botch Gems, increase All Color Gem Damage 300% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/05/SkillPlates_BigBossMan_AllClass.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Visceral Visage",
+    "description": "When you make 1 or more Heal Gems, increase all of your Gem Damage by 200% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/05/SkillPlates_Viscera.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "The Barber's Blades (Red)",
+    "description": "Whenever you make 6 or more Trap Gems, increase your Red Gem damage by 75% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/05/SkillPlates_HOFB_112_Power.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "The Barber's Blades (Green)",
+    "description": "Whenever you make 6 or more Trap Gems, increase your Green Gem damage by 75% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/05/SkillPlates_HOFB_112_Tech.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "The Barber's Blades (Yellow)",
+    "description": "Whenever you make 6 or more Trap Gems, increase your Yellow Gem damage by 75% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/05/SkillPlates_HOFB_112_Show.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "The Barber's Blades (Blue)",
+    "description": "Whenever you make 6 or more Trap Gems, increase your Blue Gem damage by 75% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/05/SkillPlates_HOFB_112_Acro.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Fearless Stare",
+    "description": "Whenever you make 6 or more Submission Gems, increase your Black Gem damage by 200% for 2 turns!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/05/SkillPlates_P_Apri2025_Wknd4we-1.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Punk's Gauntlets",
+    "description": "When you make 6+ Color Turn Gems, increase all of your Gem damage by 500% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/03/T6_SkillPlates_CM-Punkdf.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Dirty Deeds",
+    "description": "When you make 6+ Power Gems, increase all of your Gem damage by 100% and your Purple Gem damage by 100% for 1 turn",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/03/T5_SkillPlates_DominikMysterio.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Botch Slapped",
+    "description": "When you make 8+ Botch Gems, make 8 random Gems into Multiply Gems of Strength 8!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/02/SkillPlate_8thBotch.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Total Silence",
+    "description": "When you make 8+ Silence Gems, make 8 random Gems into Multiply Gems of Strength 8!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/02/SkillPlate_8thSilence.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Death Row",
+    "description": "When you make 8+ Row Break Gems, make 8 random Gems into Multiply Gems of Strength 8!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/02/SkillPlate_8thRow.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Star-Crossed",
+    "description": "When you make 8+ Cross Break Gems, make 8 random Gems into Multiply Gems of Strength 8!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/02/SkillPlate_8thCross.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Chemical X",
+    "description": "When you make 8+ X-Break Gems, make 8 random Gems into Multiply Gems of Strength 8!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/02/SkillPlate_8thXBreak.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Blasting Off Again",
+    "description": "When you make 8+ Blast Gems, make 8 random Gems into Multiply Gems of Strength 8!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/02/SkillPlate_8thBlast.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "It's a Trap!",
+    "description": "When you make 8+ Trap Gems, make 8 random Gems into Multiply Gems of Strength 8!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/02/SkillPlate_8thTrap.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Blood Sucker",
+    "description": "When you make 8+ Leech Gems, make 8 random Gems into Multiply Gems of Strength 8!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/02/SkillPlate_8thLeech.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Time To Get Radical",
+    "description": "Whenever you activate a Black Move, increase your Black Gem Damage by 50% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/02/image-5.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Point Break",
+    "description": "Whenever you Destroy 30+ Gems, Generate 30 Black Gems at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/01/SkillPlate_GemGeneration_Black_RR.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Mischief",
+    "description": "Whenever you Destroy 30+ Gems, Generate 30 Purple Gems at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/01/SkillPlate_GemGeneration_Purple_RR.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Off the Ropes",
+    "description": "Whenever you Destroy 30+ Gems, Generate 30 Blue Gems at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/01/SkillPlate_GemGeneration_Blue_RR.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Enigma",
+    "description": "Whenever you Destroy 30+ Gems, Generate 30 Green Gems at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/01/SkillPlate_GemGeneration_Green_RR.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Unlimited Power",
+    "description": "Whenever you Destroy 30+ Gems, Generate 30 Red Gems at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/01/SkillPlate_GemGeneration_Red_RR.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Mic Drop",
+    "description": "Whenever you Destroy 30+ Gems, Generate 30 Yellow Gems at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2025/01/SkillPlate_GemGeneration_Yellow_RR.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Valkyrie's Crest",
+    "description": "Whenever you activate a Red Move, increase your Red Gem Damage by 50% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2024/12/SkillPlates_LV.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "YEET",
+    "description": "Whenever you make 6+ Column Break Gems, increase all of your Gem damage by 500% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2024/12/SkillPlates_Silver_T6_Yeet_1.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Devil's Drip",
+    "description": "When you make 6+ Column Break Gems, make 7 random Gems into Multiply Gems of Strength 7!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2024/12/SkillPlates_JDM.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Buzzard's Beak",
+    "description": "Whenever you activate a Green Move, increase your Green Gem Damage by 50% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2024/11/SkillPlates_DLumis.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Down the Rabbit Hole",
+    "description": "When you break 7+ Row Break Gems, generate 22 random Black Gems!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2024/11/SkillPlates_ERowanGemBoost.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Insatiable Hunger",
+    "description": "Whenever you make 6 or more Row Break Gems, increase all of your Gem damage by 50% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2024/11/SkillPlates_JGracyGemBoost.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Dual Katanas",
+    "description": "When you make 9+ Power Gems, decrease all of your Opponent's Gem damage by 80% for 3 turns!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2024/11/SkillPlates_AugHiH_Seth_Silver.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Twin Sai",
+    "description": "When you break 10+ Cross Break Gems, generate 25 random Red Gems!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2024/11/SkillPlates_AugHiH_ReyM_Silver.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "Bo-Staff",
+    "description": "When you Dodge a Move or Gems, increase all of your Move damage by 100% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2024/11/SkillPlates_AugHiH_Xwoods_Bronze.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Nunchaku",
+    "description": "When you Dodge a Move or Gems, increase all of your Gem damage by 100% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2024/11/SkillPlates_AugHiH_Kofi_Bronze.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "LA Bite",
+    "description": "Whenever you activate a Yellow Move, increase your Yellow Gem Damage by 50% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2024/10/SkillPlates_LAKnight.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "CTRL Freak",
+    "description": "When you make 6 or more Silence Gems, increase all of your Gem damage by 100% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2024/10/SkillPlates_ooc.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "The Biteman's Battle Armor",
+    "description": "Whenever you make 6 or more Submission Gems, increase your Red Gem damage by 200% for 2 turns!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2024/10/SkillPlates_BHart_Zombie-1.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Chelsea's Entombment",
+    "description": "Whenever you make 8 or more Blast Gems, Increase your Black Gem Damage by 400% for 1 Turn and make 4 Random Blast Gems.",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2024/10/SkillPlates_CGREEN_Zombie.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "The New Era",
+    "description": "When you break 4+ Green Gems, generate 10 random Yellow Gems at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2024/09/SkillPlate_GemGeneration_GreenToYellow.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Giant Killer",
+    "description": "When you break 4+ Green Gems, generate 10 random Red Gems at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2024/09/SkillPlate_GemGeneration_GreenToRed.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Neckbreaker",
+    "description": "When you break 4+ Green Gems, generate 10 random Blue Gems at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2024/09/SkillPlate_GemGeneration_GreenToBlue.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Limitless",
+    "description": "When you break 4+ Green Gems, generate 10 random Purple Gems at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2024/09/SkillPlate_GemGeneration_GreenToPurple.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Cowabunga",
+    "description": "When you break 4+ Yellow Gems, generate 10 random Green Gems at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2024/09/SkillPlate_GemGeneration_YellowToGreen.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Like A Boss",
+    "description": "When you break 4+ Red Gems, generate 10 random Green Gems at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2024/09/SkillPlate_GemGeneration_RedToGreen.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Fearless Leader",
+    "description": "When you break 4+ Blue Gems, generate 10 random Green Gems at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2024/09/1000025867.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "High-Grade Titanium",
+    "description": "When you break 4+ Purple Gems, generate 10 random Green Gems at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2024/09/SkillPlate_GemGeneration_PurpleToGreen.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Tama's Chest Plate",
+    "description": "Whenever you make 6 or more Trap Gems, increase your Purple Gem damage by 300% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2024/09/SkillPlates_Sep24T1GBGTT_906.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Glowing Fate",
+    "description": "Whenever you make 6 or more Submission Gems, increase your Green Gem damage by 200% for 2 turns!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2024/08/SkillPlates_Aug24WL4_826.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Unbreakable Crown",
+    "description": "Whenever you break 7 or more Yellow Gems, generate 20 Green Gems.",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2024/08/SkillPlates_MY-1.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Dark Master",
+    "description": "Whenever you break 20+ Trap Gems, generate 20 Black Gems at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2024/07/SkillPlates_JY24W5SSD_729.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Timeless Style",
+    "description": "Whenever you activate a Purple Move, increase your Blue Gem Damage by 250% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2024/07/image-40.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Must-See Headband",
+    "description": "Whenever you make 4 or more Snowfall Gems, increase your Red Gem damage by 50% for 1 turn and reduce all of your Opponent's Gem damage by 50% for 2 turns",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2024/06/SkillPlates_J24T2HQAS_614-1.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "RKOverload",
+    "description": "Whenever you break 4 or more Purple Gems, increase your Yellow Gem damage by 50% for 2 turns!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2024/05/SkillPlates_RKO_520.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Let Me Talk To Ya!",
+    "description": "Whenever you make 4 or more Pyro Gems, increase your Blue Gem damage by 300% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2024/05/SkillPlates_LAKnight_520.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Will of Cargill",
+    "description": "Whenever you make 10+ Multiply Gems, increase your Green Gem and Yellow Move damage by 100% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2024/05/SkillPlates_Cargill_520.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Final Boss Finery",
+    "description": "When you make 15+ Botch Gems, decrease all of your Opponent's Gem damage by 80% for 3 turns!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2024/05/SkillPlates_M24T2_517.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "The Nearing End",
+    "description": "When you make 6 or more Immobile Gems, increase your Gem damage by 350% for 1 turn.",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2024/04/SkillPlates_KEIN_419ds.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Bubba Ray's Specs",
+    "description": "Whenever you activate a Purple Move, increase your Purple Gem Damage by 50% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2024/03/SkillPlates_BRD_3_22.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "D-Von's Specs",
+    "description": "Whenever you make 6 or more Color Turn Gems, increase all of your Gem damage by 50% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2024/03/SkillPlates_DVD_3_8df.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Shades of Reigns",
+    "description": "When you make 7 or more Cross Break Gems, increase all of your Gem and Move damage by 100% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2024/02/SkillPlates_RRR_206e.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "A Moment of Bliss",
+    "description": "Whenever you break 3 or more Purple Gems, get 3 Blue Move Points(MP) at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2024/02/SkillPlate_MPPlus_PurpletoBlue.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Strong Style",
+    "description": "Whenever you break 3 or more Blue Gems, get 3 Yellow Move Points(MP) at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2024/02/SkillPlate_MPPlus_BluetoYellow.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Booyaka",
+    "description": "Whenever you break 3 or more Yellow Gems, get 3 Purple Move Points(MP) at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2024/02/SkillPlate_MPPlus_YellowtoPurple.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Vintage Glamour",
+    "description": "Whenever you break 3 or more Green Gems, get 3 Yellow Move Points(MP) at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2024/02/SkillPlate_MPPlus_GreentoYellow.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Larger than Life",
+    "description": "Whenever you break 3 or more Yellow Gems, get 3 Red Move Points(MP) at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2024/02/SkillPlate_MPPlus_YellowtoRed.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Corporate Crown",
+    "description": "Whenever you break 3 or more Purple Gems, get 3 Black Move Points(MP) at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2024/02/SkillPlate_MPPlus_PurpletoBlack.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "B.O.A.T. Status",
+    "description": "Whenever you break 3 or more Purple Gems, get 3 Red Move Points(MP) at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2024/02/SkillPlate_MPPlus_PurpletoRed.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Graveheart",
+    "description": "Whenever you break 3 or more Black Gems, get 3 Blue Move Points(MP) at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2024/02/SkillPlate_MPPlus_BlacktoBlue.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Thuganomics",
+    "description": "Whenever you break 3 or more Yellow Gems, get 3 Blue Move Points(MP) at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2024/02/SkillPlate_MPPlus_YellowtoBlue.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Phenomenal Flow",
+    "description": "Whenever you break 3 or more Green Gems, get 3 Purple Move Points(MP) at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2024/02/SkillPlate_MPPlus_GreentoPurple.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "The Barber's Blades",
+    "description": "Whenever you make 6 or more Trap Gems, increase your Black Gem damage by 75% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2024/02/SkillPlates_HOFB_112.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Chelsea's Entitlement",
+    "description": "Whenever you make 15 or more Trap Gems, increase your Purple Move Damage by 200% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2024/02/SkillPlates_CG_1215-1.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Hard Time Blues",
+    "description": "Whenever you make 6 or more Countdown Gems, increase your Blue and Yellow Gem damage by 100% for 2 turns!",
+    "imageUrl": "https://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/12/SkillPlates_DR_1117.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "The Heartstopper",
+    "description": "Whenever you activate a Blue Move, increase your Blue Gem Damage by 50% for 1 turn!",
+    "imageUrl": "https://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/12/SkillPlates_Silver_T6_ZHBK.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "The Sherriff's Badge",
+    "description": "Whenever you break 15 or more Red Gems, generate 30 Yellow Gems!",
+    "imageUrl": "https://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/12/SkillPlates_Silver_T6_ZCodyRhodes.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "The Last Ride to Hell",
+    "description": "Whenever you make 15 or more Trap Gems, increase your Green Gem Damage by 200% for 1 turn!",
+    "imageUrl": "https://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/12/SkillPlates_Silver_T6_ZUndertaker.png",
+    "category": "Ultimate Plate"
+  },
+  {
+    "name": "The General's Hand",
+    "description": "Whenever you make 6 or more Submission Gems, gain 3 Purple MP and 3 Yellow MP!",
+    "imageUrl": "https://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/12/SkillPlates_ZG_106.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Heart of Jade",
+    "description": "Whenever you make 6 or more Countdown Gems, increase your Purple and Red Gem damage by 100% for 2 turns!",
+    "imageUrl": "https://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/12/SkillPlates_CJ908.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Ghost Whooper",
+    "description": "Whenever you activate a Yellow Move, increase your Yellow Move Damage by 100% for two total turns (including the current turn)!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/SkillPlates_GB_StoneCold.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Head of the Seance",
+    "description": "Whenever you break 8+ Red Gems, generate 30 random Red Gems at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/SkillPlates_GB_Reigns.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Fluffy Fantasm",
+    "description": "Whenever you generate 1+ Juggernaut Gems, reduce your Opponent's MP by 3!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/SkillPlates_GB_StayPuft.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Hauntamaniac",
+    "description": "When you break 7+ Red Gems, generate 10 random Purple Gems AND when you break 7+ Purple Gems, generate 10 random Red Gems at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/SkillPlates_GB_Hogan.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Seal of the Acolytes",
+    "description": "Whenever you make 6 or more Submission Gems, increase ALL of your Gem damage by 50% for your next turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-54.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Santa's Muscles",
+    "description": "Whenever you break 3 or more Red Gems, get 3 Green Move Points(MP) at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2024/07/SkillPlate_MPPlus_GreenToRed.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Nightmare Insignia",
+    "description": "Whenever you make 6 or more Multiply Gems, increase your Yellow Gem damage by 100% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-53.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Real American",
+    "description": "When you break 4+ Red Gems, generate 10 random Blue Gems at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-59.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Uncle Slam",
+    "description": "When you break 4+ Blue Gems, generate 10 random Red Gems at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-58.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Eternal Vigilance",
+    "description": "Whenever you break 3 or more Red Gems, get 3 Blue Move Points(MP) at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-57.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Tribute to the Troops",
+    "description": "Whenever you break 3 or more Blue Gems, get 3 Red Move Points(MP) at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-56.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Eye of the Tiger",
+    "description": "Whenever you break 3 or more Red Gems, get 3 Black Move Points(MP) at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/06/SkillPlate_MPPlus_RebToBlack.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Thrill of the Fight",
+    "description": "Whenever you break 3 or more Green Gems, get 3 Black Move Points(MP) at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/06/SkillPlate_MPPlus_GreenToBlack.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Rising Up",
+    "description": "Whenever you break 3 or more Yellow Gems, get 3 Black Move Points(MP) at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/06/SkillPlate_MPPlus_BlueToBlack.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Last Known Survivor",
+    "description": "Whenever you break 3 or more Black Gems, get 3 Red Move Points(MP) at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/06/SkillPlate_MPPlus_BlackToRed.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Prey in the Night",
+    "description": "Whenever you break 3 or more Black Gems, get 3 Green Move Points(MP) at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/06/SkillPlate_MPPlus_BlackToGreen.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Challenge of our Rival",
+    "description": "Whenever you break 3 or more Black Gems, get 3 Yellow Move Points(MP) at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/06/SkillPlate_MPPlus_BlackToYellow.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "I Pity the Fool",
+    "description": "When you break 4+ Red Gems, generate 10 random Black Gems at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/05/SkillPlate_GemGeneration_RedToBlack.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Unstoppable Force",
+    "description": "When you break 4+ Yellow Gems, generate 10 random Black Gems at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/05/SkillPlate_GemGeneration_YellowToBlack.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "The Kevin Owens Show",
+    "description": "When you break 4+ Green Gems, generate 10 random Black Gems at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/05/SkillPlate_GemGeneration_GreenToBlack.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Immovable Object",
+    "description": "When you break 4+ Black Gems, generate 10 random Yellow Gems at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/05/SkillPlate_GemGeneration_BlackToYellow.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Underdog Story",
+    "description": "When you break 4+ Black Gems, generate 10 random Red Gems at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/05/SkillPlate_GemGeneration_BlackToRed.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Deafening Silence",
+    "description": "When you break 4+ Black Gems, generate 10 random Green Gems at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/05/SkillPlate_GemGeneration_BlackToGreen.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Piper Pride",
+    "description": "Whenever you make 4 or more Pyro Gems, increase your Gem Damage by 100% and your Yellow Gem damage by 500% for 1 turn",
+    "imageUrl": "https://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/09/SkillPlates_PN_6162.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "The Mark of a Hero",
+    "description": "Whenever you make 6 or more Leech Gems, increase your Purple and Yellow Gem damage by 75% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-51.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "KO's Fighting Spirit",
+    "description": "Whenever you make 6 or more Immobile Gems, increase your Green Gem damage by 150% and your Black Move damage by 250% for 2 turns!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-50.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "The Gremlin's Ears",
+    "description": "When you generate 3 or more Submission Gems, increase your Red and Blue Gem damage by 100% for 2 turns!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-49.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Eyes of Judgment",
+    "description": "When you make 6 or more Countdown Gems, deplete 6 MP from each of the opponent's Moves!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-48.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Hunter's Medallion",
+    "description": "Whenever you break 4 or more Green Gems, increase your Yellow Gem damage by 100% for 2 turns!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-47.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "The Lion's Gaze",
+    "description": "When you break 4 or more X-Break Gems, deplete 6 MP from each of the opponent's Moves!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-46.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "The Hitman's Battle Armor",
+    "description": "When you make 8 or more Botch Gems, deplete 4 MP from each of the opponent's Moves!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-45.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Bianca's Braid Blade",
+    "description": "Whenever you make 6 or more X-Break Gems, increase all of your Gem Damage by 100% for 2 turns!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-44.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "The Dominator's Drip",
+    "description": "Whenever you activate a Black Move, make 7 random Gems into Multiply Gems of Strength 7!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-43.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Mella's Mask",
+    "description": "Whenever you make 6 or more Submission Gems, increase your Blue Move damage by 150% and decrease your Opponent's Gem damage by 25% for 3 turns!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-42.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "The Bulldog's Bracers",
+    "description": "Whenever you generate 10 or more Reinforce Gems, increase your Yellow Gem damage by 25% and your Red Gem damage by 75% for 3 turns!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-41.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "The Princess's Flaming Glove",
+    "description": "Whenever you make 6 or more Multiply Gems, increase your Blue Gem damage by 50% for 2 turns!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-40.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "The Main Face of Mick Foley",
+    "description": "Whenever you break 6 or more Black Gems, make 5 random Gems into Power Gems of Strength 50,000!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-39.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "The Baddest Jacket",
+    "description": "When you generate 3 or more Submission Gems, increase your Yellow and Black Gem damage by 100% for 2 turns!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-38.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "La Familia",
+    "description": "Whenever you break 3 or more Blue Gems, gain 3 Green Move Points(MP)!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-37.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "The Deadman's Sigil",
+    "description": "Whenever you break 3 or more Black Gems, make 6 random Gems into X-Break Gems!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-36.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "The Hulkamaniac",
+    "description": "Whenever you break 20 or more Gems, increase your Black Move Dmg by 300% and Red Gem Dmg by 200% for 2 turns!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2022/02/SkillPlates_HH.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Uso Cap",
+    "description": "Whenever you make 8 or more Silence Gems, increase your Green Gem damage by 150% for 3 turns!",
+    "imageUrl": "https://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-55.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "The Queen's Tiara",
+    "description": "Whenever you make 6 or more Multiply Gems, increase your Black Gem damage by 50% for 2 turns!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-35.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Scimitars of the Sheik",
+    "description": "Whenever you activate a Green Move, increase your Green Move Damage by 100% for 2 total turns (includes current turn)!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-34.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Chain of the Colossus",
+    "description": "Whenever you break 4 or more Red Gems, make 4 random Gems into Red Gems at end of turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-33.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Tested Loyalty",
+    "description": "Whenever you break 6 or more Red Gems, increase your Red Move damage by 75% for 2 turns!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-32.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Ultimate Opportuni-Z",
+    "description": "Whenever you make 4 or more Countdown Gems, increase your Gem damage by 50% and reduce your Opponent's Gem damage by 35% for 2 turns!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-31.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "King Sheamus's Crown",
+    "description": "When you make 4 or more Cross Break Gems, increase your Red Gem damage by 150% and your Green Move damage by 50% for 2 turns!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-30.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Heroic Titan's Crest",
+    "description": "Whenever you make 8 or more Blast Gems, increase the damage of all your Gems by 200% for 2 turns!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-29.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Mysterious Mask",
+    "description": "Whenever you make 5 or more Heal Gems, increase your Yellow Move damage by 125% for 2 turns!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-28.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Superior Tech",
+    "description": "Whenever you break 3 or more Purple Gems, make 7 Red Gems into Yellow Gems at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-27.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "What The Rock is Cookin'",
+    "description": "Whenever you break 3 or more Red Gems, get 3 Purple Move Points(MP) at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-26.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "It's Time Once Again",
+    "description": "Whenever you break 3 or more Purple Gems, get 3 Yellow Move Points(MP) at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-25.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "The Smoke",
+    "description": "Whenever you break 3 or more Blue Gems, get 3 Purple Move Points(MP) at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-24.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Heavy Machinations",
+    "description": "Whenever you break 3 or more Yellow Gems, get 3 Green Move Points(MP) at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-23.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Honky Tonk's Blues",
+    "description": "Whenever you break 3 or more Green Gems, get 3 Blue Move Points(MP) at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-22.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "The Kid's Lightning",
+    "description": "Whenever you break 3 or more Yellow Gems, make 7 Purple Gems into Blue Gems at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-21.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "The Viper's Strike",
+    "description": "Whenever you break 3 or more Black Gems, make 7 Yellow Gems into Red Gems at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-20.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Shawn's Showstopper",
+    "description": "Whenever you break 3 or more Blue Gems, make 7 Red Gems into Green Gems at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-19.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "DX Army Assault",
+    "description": "Whenever you break 3 or more Purple Gems, make 7 Green Gems into Black Gems at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-18.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Twilight Ritual",
+    "description": "Whenever you break 3 or more Red Gems, make 7 Blue Gems into Purple Gems at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-17.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Shock the System",
+    "description": "Whenever you break 3 or more Green Gems, make 7 Black Gems into Yellow Gems at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-15.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "General's Orders",
+    "description": "Whenever you break 3 or more Red Gems, get 3 Yellow Move Points(MP) at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-14.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "The Godfather's Mojo",
+    "description": "Whenever you break 5 or more Loot Gems, get 5 Purple Move Points(MP) at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-13.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Bad Attitude",
+    "description": "Whenever you break 3 or more Blue Gems, get 3 Black Move Points(MP) at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-12.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Eternal Positivity",
+    "description": "Whenever you break 3 or more Black Gems, get 3 Purple Move Points(MP) at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-11.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Glowing Phantom Power",
+    "description": "Whenever you break 3 or more Purple Gems, get 3 Green Move Points(MP) at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-9.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Aftershock",
+    "description": "Whenever you break 3 or more Green Gems, get 3 Red Move Points(MP) at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-8.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Sid's Powerbomb",
+    "description": "Whenever you create 2 or more Power Gems, instantly generate 2 additional random Power Gems of strength 4000, then generate 2 more at the end of your turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-7.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "All Heart",
+    "description": "When you generate 3 or more Submission Gems, increase your Green and Purple Gem damage by 100% for 2 turns!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-10.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Boss Time",
+    "description": "Whenever you break 6 or more Yellow Gems, make 6 random Gems into Cross Break Gems!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-6.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Cheap Shot",
+    "description": "When you land a Gem Critical Hit, reduce the damage of all of your opponent's Gems by 50% for 1 turn!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/SkillPlate_Mar2020_1.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Blue Bomber",
+    "description": "50% chance to create 2 random Blast Gems each time you use a Signature Move or swipe a Gem!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-4.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Two Words For Ya'",
+    "description": "50% chance to create 2 random X-Break Gems each time you use a Signature Move or swipe a Gem!",
+    "imageUrl": "https://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-5.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Escape Artist",
+    "description": "Equip this Skill Plate for a 33% chance to break 30 Submission Gems on each turn while your Superstar is in a submission",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-3.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Chaotic Blast",
+    "description": "Equip this Skill Plate to increase your Gem Critical Hit chance and create 1 random Blast Gem whenever you land a Gem Critical Hit!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-2.png",
+    "category": "Skill Plate"
+  },
+  {
+    "name": "Head Games",
+    "description": "Equip this Skill Plate to increase your Gem Critical Hit chance and create 10 random Botch gems whenever you land a Gem Critical Hit!",
+    "imageUrl": "http://wwechampions.scopely.com/wp-content/uploads/sites/3/2023/08/image-1.png",
+    "category": "Skill Plate"
+  }
+]
